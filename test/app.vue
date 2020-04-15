@@ -3,7 +3,11 @@
     .upper
       span 这是 collapse-box 上面的东西
       span.btn(@click="collapse=!collapse") {{collapse?'放':'收'}}
-    collapse-box(:collapse="collapse") haha
+    
+    collapse-box(:collapse="collapse")
+      .haha haha
+      .heihei heihei
+    
     .underneath 这是 collapse-box 下面的东西
 </template>
 
