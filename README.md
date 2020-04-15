@@ -1,6 +1,7 @@
 # collapse-box.vue
 一个简陋的 Vue 组件，用来呈现高度的塌陷效果
-[!]()
+
+![效果](https://raw.githubusercontent.com/daGaiGuanYu/collapse-box.vue/master/test/collapse-box.gif)
 
 ## 开始
 ##### 安装
@@ -39,7 +40,7 @@ export default {
 ```
 
 ## 注意事项
-+ 建议读一读源码（很少）
-+ 不要在 collapse-box 的根元素上添加样式，除非你读了源码
++ 建议读一读[源码](https://github.com/daGaiGuanYu/collapse-box.vue/blob/master/src/index.vue)（很少）
++ 不要在 collapse-box 的根元素上添加样式，除非你读了[源码](https://github.com/daGaiGuanYu/collapse-box.vue/blob/master/src/index.vue)
 + 元素塌陷时，只是把高度设置成为了 0px
-+ 源码真的很少，至少应该扫一眼
++ [源码](https://github.com/daGaiGuanYu/collapse-box.vue/blob/master/src/index.vue)真的很少，至少应该扫一眼
