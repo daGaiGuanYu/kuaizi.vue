@@ -1,6 +1,6 @@
 {
   "name": "kuaizi.vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue2 组件库",
   "main": "src/index",
   "scripts": {
