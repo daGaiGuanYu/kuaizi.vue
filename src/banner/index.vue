@@ -2,7 +2,8 @@
   .kuaizi-banner
     .list(ref="list")
       slot
-    
+    .dot-list
+      .dot(v-for="index in sum" @mouseover="setCurrent(index-1)" :class="{ selected: index-1 == realCurrent }")
 </template>
 
 <script>
@@ -63,9 +64,14 @@ export default {
       enterFromRight(children[nv])
     },
     setCurrent(nv){
-      const ov = this.innerCurrent
-      this.innerCurrent = nv
-      if(ov<nv){ // 新的在右边  
+      const ov = this.realCurrent
+      if(ov == nv) return 
+      this.realCurrent = nv
+
+      const children = this.$refs.list.children
+      initAllDom(children)
+
+      if(ov<nv){ // 新的在右边
         leave2Left(children[ov])
         enterFromRight(children[nv])
       }else{
@@ -120,9 +126,24 @@ function leave2Right(dom){
 .kuaizi-banner
   overflow: hidden
   position: relative
+  height: auto
 .list
   width: 100%
   height: 100%
+.dot-list
+  position: absolute
+  left: 50%
+  transform: translate(-50%, 0)
+  bottom: 10%
+.dot
+  display: inline-block
+  margin: 0 10px
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background: rgba(0, 0, 0, 0.5)
+.selected
+  background: rgba(0, 0, 0, 0.2)
 </style>
 
 <style lang="stylus">

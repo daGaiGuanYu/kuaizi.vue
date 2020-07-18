@@ -1,7 +1,7 @@
 <template lang="pug">
   .demo
     h1 banner
-    banner(:autoplay="true" :intervalDuration="1000" :animationDuration="1000")
+    banner(:autoplay="true")
       .item 1111111111111111111111111
       .item 2222222222222222222222222
       .item 3333333333333333333333333
@@ -22,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.kuaizi-banner
+  width: 300px
+  height: 200px
+</style>
