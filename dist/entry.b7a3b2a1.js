@@ -13,4 +13,4 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"../cmp/collapse-box":"ya38"}],"Focm":[function(require,module,exports) {
 "use strict";var e=r(require("vue")),u=r(require("./app.vue"));function r(e){return e&&e.__esModule?e:{default:e}}new e.default({el:"#app",render:function(e){return e(u.default)}});
 },{"vue":"EjOG","./app.vue":"hWNS"}]},{},["Focm"], null)
-//# sourceMappingURL=/entry.b7a3b2a1.js.map
+//# sourceMappingURL=entry.b7a3b2a1.js.map

@@ -5,7 +5,7 @@
   "main": "src/index",
   "scripts": {
     "demo": "parcel test/entry/index.pug",
-    "build-demo": "parcel build test/entry/index.pug"
+    "build-demo": "parcel build --public-url . test/entry/index.pug"
   },
   "repository": {
     "type": "git",
