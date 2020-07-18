@@ -1,14 +1,17 @@
 <template lang="pug">
   .root-root
     collapse-box-demo
+    banner-demo
 </template>
 
 <script>
 import CollapseBoxDemo from '../cmp/collapse-box'
+import BannerDemo from '../cmp/banner-demo'
 
 export default {
   components: {
-    CollapseBoxDemo
+    CollapseBoxDemo,
+    BannerDemo
   }  
 }
 </script>

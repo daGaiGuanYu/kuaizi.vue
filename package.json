@@ -22,10 +22,10 @@
     "cssnano": "^4.1.10",
     "pug": "^2.0.4",
     "stylus": "^0.54.7",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
   },
   "dependencies": {
-    "vue": ">= 2.0",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue": ">= 2.0"
   }
 }

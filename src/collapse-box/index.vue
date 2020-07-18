@@ -5,11 +5,15 @@
 </template>
 
 <script>
-let timeid
 const defaultDuration = 300
 
 export default {
   props: ['collapse', 'duration'],
+  data(){
+    return {
+      _timeid: null
+    }
+  },
   computed: {
     d(){
       if(!this.duration)
@@ -26,8 +30,8 @@ export default {
   },
   watch: {
     collapse(nv){
-      if(timeid)
-        clearTimeout(timeid)
+      if(this.$data._timeid)
+        clearTimeout(this.$data._timeid)
       
       let box = this.$refs.box
       box.style.transition = ''
