@@ -1,10 +1,11 @@
 {
-  "name": "collapse-box.vue",
+  "name": "kuaizi.vue",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.vue",
+  "description": "vue2 组件库",
+  "main": "src/index",
   "scripts": {
-    "test": "parcel test/index.pug"
+    "demo": "parcel test/entry/index.pug",
+    "build-demo": "parcel build test/entry/index.pug"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,13 @@
   "homepage": "https://github.com/daGaiGuanYu/collapse-box.vue#readme",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.2",
+    "cssnano": "^4.1.10",
     "pug": "^2.0.4",
     "stylus": "^0.54.7",
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "vue": "^2.6.11",
+    "vue": ">= 2.0",
     "vue-hot-reload-api": "^2.3.4"
   }
 }
