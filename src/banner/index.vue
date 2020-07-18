@@ -23,6 +23,7 @@ export default {
   },
   data(){
     return {
+      _intervalId: null,
       realCurrent: 0,
       sum: 0
     }
@@ -43,7 +44,7 @@ export default {
 
       const interval = this.intervalDuration + this.animationDuration
       if(this.autoplay && this.sum>1)
-        setInterval( () => this.next() , interval)
+        this._intervalId = setInterval( () => this.next() , interval)
       
       const cDom = children[0]
       cDom.style.display = 'block'
@@ -82,6 +83,9 @@ export default {
   },
   mounted(){
     this.init()
+  },
+  destroyed(){
+    clearInterval(this._intervalId)
   }
 }
 
